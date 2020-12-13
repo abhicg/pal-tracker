@@ -1,6 +1,6 @@
 ---
 applications:
-- name: pal-tracker
+- name: pal-tracker-abhig
   path: build/libs/pal-tracker.jar
   buildpacks:
   - java_buildpack_offline
@@ -12,7 +12,7 @@ applications:
   health-check-http-endpoint: /actuator/health/liveness
   timeout: 20
   routes:
-  - route: pal-tracker-${UNIQUE_IDENTIFIER}.${DOMAIN}
+  - route: pal-tracker-abhi-g.apps.nonprod-d01.primepcf.com
   services:
   - tracker-database
   env:
